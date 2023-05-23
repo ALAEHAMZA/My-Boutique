@@ -96,6 +96,9 @@
                             <nav>
                                 <ul>
                                     <li><a class="active" href="/">Home </a></li>
+                                    <li><a href="{{ Route('shop')}}">Shop</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#contact">Contact</a></li>
                                     @auth
                                         <li><a href="{{Route('admin.dashboard')}}">My Account<i class="fi-rs-angle-down"></i></a>
                                             @if (Auth::user()->utype === 'ADM')
@@ -113,9 +116,6 @@
                                             @endif
                                         </li>
                                     @endif
-                                    <li><a href="{{ Route('shop')}}">Shop</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>

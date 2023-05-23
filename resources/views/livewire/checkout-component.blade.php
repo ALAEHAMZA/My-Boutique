@@ -111,9 +111,10 @@
                                     </table>
                                 </div>
                                 <div class="bt-1 border-color-1 mt-30 mb-30"></div>
-                                <a href="{{ Route('pdf') }}" class="btn btn-fill-out btn-block mt-30">Export Order</a>
-                                <a href="#" wire:click.prevent='validateOrder()'
-                                    class="btn btn-fill-out btn-block mt-30">Place Order</a>
+                                @auth
+                                    <a href="{{ Route('pdf') }}" class="btn btn-fill-out btn-block mt-30">Export Order</a>
+                                    <a href="#" wire:click.prevent='validateOrder()' class="btn btn-fill-out btn-block mt-30">Place Order</a>
+                                @endauth
                         </div>
                     </div>
                 </div>

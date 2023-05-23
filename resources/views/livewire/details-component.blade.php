@@ -30,7 +30,7 @@
                             @foreach ( $nproducts as $nproduct )
                                 <div class="single-post clearfix">
                                     <div class="image">
-                                        <img src="{{ asset('assets/imgs/shop/product-')}}{{$nproduct->id}}-1.jpg" alt="{{$nproduct->name}}">
+                                        <img src="{{ asset('assets/imgs/products/')}}/{{$nproduct->image}}" alt="{{$nproduct->name}}">
                                     </div>
                                     <div class="content pt-10">
                                         <h5><a href="{{Route('product.details',['slug'=>$nproduct->slug])}}">{{$nproduct->name}}</a></h5>
