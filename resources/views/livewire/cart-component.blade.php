@@ -20,16 +20,7 @@
                             </div>
                             @endif
                             <table class="table shopping-summery text-center clean">
-                                <thead>
-                                    <tr class="main-heading">
-                                        <th scope="col">Image</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Price</th>
-                                        <th scope="col">Quantity</th>
-                                        <th scope="col">Subtotal</th>
-                                        <th scope="col">Remove</th>
-                                    </tr>
-                                </thead>
+
                                 <tbody>
                                     @if (Cart::count() > 0)
                                         @foreach (Cart::content() as $item )
